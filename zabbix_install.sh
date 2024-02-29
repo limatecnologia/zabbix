@@ -149,8 +149,9 @@ $mysql_command <<EOF
     quit
 EOF
 
-wget https://github.com/limatecnologia/zabbix/sermais.png
-wget https://github.com/limatecnologia/zabbix/brand.conf.php
+wget https://github.com/limatecnologia/zabbix/blob/main/logofinaltransp-500x500.png
+wget https://raw.githubusercontent.com/limatecnologia/zabbix/main/brand.conf.php
+mv logofinaltransp-500x500.png sermais.png
 mv sermais.png /usr/share/zabbix/assets/img
 mv brand.conf.php /usr/share/zabbix/local/conf
 
