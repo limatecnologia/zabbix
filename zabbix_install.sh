@@ -102,9 +102,11 @@ IP Externo: $EXTERNAL_IP"
 
   # Adiciona o repositório do Zabbix
   send_telegram_message "Adicionando o repositório do Zabbix..."
-  wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.0-4+ubuntu22.04_all.deb
+  #wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.0-4+ubuntu22.04_all.deb
+  wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.0-4+ubuntu20.04_all.deb
   #-O /tmp/zabbix-release.deb
-  dpkg -i zabbix-release_6.0-4+ubuntu22.04_all.deb
+  #dpkg -i zabbix-release_6.0-4+ubuntu22.04_all.deb
+  dpkg -i zabbix-release_6.0-4+ubuntu20.04_all.deb
   
   send_telegram_message "Atualizando lista de pacotes..."
   apt update
